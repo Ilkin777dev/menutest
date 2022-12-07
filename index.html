@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <title>MENU TEST</title>
+</head>
+
+<body>
+
+    <div class="header">
+        HEADER
+    </div>
+
+    <div class="main_block">
+        <div class="owl-carousel owl-theme">
+            <div class="slide">SLIDE 1</div>
+            <div class="slide">SLIDE 2</div>
+            <div class="slide">SLIDE 3</div>
+            <div class="slide">SLIDE 4</div>
+            <div class="slide">SLIDE 5</div>
+            <div class="slide">SLIDE 6</div>
+            <div class="slide">SLIDE 7</div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    responsive: {
+                        1000: {
+                            items: 3,
+                        },
+                        576: {
+                            items: 2,
+                        },
+                        0: {
+                            items: 1,
+                        }
+
+                    }
+                });
+            });
+    </script>
+</body>
+
+</html>
